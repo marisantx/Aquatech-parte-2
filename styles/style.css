@@ -1,0 +1,229 @@
+/* Adicionar aqui toda a estilização criada para sua aplicação. */
+
+        /* Header do site*/ 
+
+/* Colocar a linha e achar a fonte */
+
+body {
+    margin: 0;
+    background-color: black;
+}
+
+.header {
+    /* border-bottom-color: blue; */
+     /*não funcionou*/
+    border-bottom: 2px;
+    border-color: #19bebe;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.header .container {
+    background-color: black;
+    border-bottom: 2px;
+    border-bottom-color: #19bebe;
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+}
+.navbar {
+    display: flex;
+    height: 30px;
+
+}
+.titulo {
+    color: #3483cc;
+}
+a, .navbar {
+    text-decoration: none;
+    color: #b67831;
+    list-style: none;
+    margin: 0px 35px 20px 35px;
+    justify-content: space-between;
+}
+
+.container .agora {
+    font-weight: 900;
+    color: #ff9d2c;
+}
+
+        /* Banner do site */
+/*Colocar para não repetir
+a imagem e arrumar font size*/
+.banner {
+    background-image: url('/public/assets/imgs/bg-jelly-fish-para-home.png');
+    height: 800px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 2px;
+    
+    /* não ta 100%, mas ok */
+}
+
+.banner .container { /*Texto*/
+    color: #fff;
+    font-size: xx-large;
+    width: 200px;
+    font-family: sans-serif;
+}
+
+.banner .container span {
+    font-weight: 700;
+}
+
+.banner .container p { 
+    /* acho que deveria ser mais fina */
+    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Conteudo do site */
+
+.social .container {
+    background-color: #d4d2ce;
+    height: 300px;
+    width: 100%;
+}
+
+.boxes {
+    display: flex;
+    justify-content: space-evenly;
+}
+.boxes .box {
+    width: 180px;
+    height: 250px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: small;
+}
+
+.box img {
+    width: 100px;
+    margin-top: 50px;
+}
+
+.box h4 {
+    margin: 5px 0px 10px 0px;
+    color: #cc1533;
+    font-size: medium;
+    font-weight: 900;
+    /* acho q não foi */
+}
+
+        /* Footer do site */
+
+/* Arrumar grossura e alinhamento do texto */
+
+.footer {
+    display: flex;
+}
+
+.footer .container {
+    background-color: #19bebe;
+    color: #fff;
+    width: 100%;
+    height: 100px;
+
+    bottom: 0;
+    display: flex;
+    justify-content: space-evenly;
+
+    font-family: sans-serif;
+    align-items: center;
+}
+.footer .container h4 {
+    text-align: center;
+}
+.footer .container span {
+    text-align: end;
+}
+
+  /* Pagina da login */
+
+        /* Conteudo da pag login */
+
+.login {
+    background-image: url('/public/assets/imgs/bg-jelly-fish-para_outras_pags.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .card-login {
+    background-color: #e4e1db;
+    /* height: 240px; */
+    width: 600px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.formulario {
+    display: flex;
+    width: 400px;
+    align-items: center;
+    padding: 10px;
+}
+
+.formulario, .campo {
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+}
+.card h2, .card span {
+    color: #e78d9c;
+    font-weight: 600;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 5px;
+}
+.card span {
+    font-size: small;
+}
+
+.campo input {
+    border-width: 3px;
+    border-style: solid;
+    border-color: #7cc0ff;
+    border-radius: 5px;
+    width: 450px;
+    height: 25px;
+}
+
+/*   :: é uma pseudo-clase */
+input::placeholder {
+    text-align: center;
+}
+
+.botao {
+    color: #fff;
+    background-color: #fd3e5e;
+    border: 0;
+    border-radius: 5px;
+    width: 100px;
+    height: 25px;
+    margin: 20px;
+}
+
+
+        /* Pagina de Cadastro */
+
+.container .card-cadastro {
+    background-color: #e4e1db;
+    height: 450px;
+    width: 600px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+        /* Pagina do Simulador */
+
+.simulador {
+    color: #fff;
+}
